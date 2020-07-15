@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Landing-Pages/static/css/main.6321b756.chunk.css",
+    "main.js": "/Landing-Pages/static/js/main.685ade8f.chunk.js",
+    "main.js.map": "/Landing-Pages/static/js/main.685ade8f.chunk.js.map",
+    "runtime-main.js": "/Landing-Pages/static/js/runtime-main.b091a948.js",
+    "runtime-main.js.map": "/Landing-Pages/static/js/runtime-main.b091a948.js.map",
+    "static/js/2.5ca03385.chunk.js": "/Landing-Pages/static/js/2.5ca03385.chunk.js",
+    "static/js/2.5ca03385.chunk.js.map": "/Landing-Pages/static/js/2.5ca03385.chunk.js.map",
+    "index.html": "/Landing-Pages/index.html",
+    "precache-manifest.aef63d99f8b9b5a749fa8527b3e59030.js": "/Landing-Pages/precache-manifest.aef63d99f8b9b5a749fa8527b3e59030.js",
+    "service-worker.js": "/Landing-Pages/service-worker.js",
+    "static/css/main.6321b756.chunk.css.map": "/Landing-Pages/static/css/main.6321b756.chunk.css.map",
+    "static/js/2.5ca03385.chunk.js.LICENSE.txt": "/Landing-Pages/static/js/2.5ca03385.chunk.js.LICENSE.txt",
+    "static/media/blue-trading.jpg": "/Landing-Pages/static/media/blue-trading.8dbe480d.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b091a948.js",
+    "static/js/2.5ca03385.chunk.js",
+    "static/css/main.6321b756.chunk.css",
+    "static/js/main.685ade8f.chunk.js"
+  ]
+}
