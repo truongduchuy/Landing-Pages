@@ -1,5 +1,10 @@
 import React from 'react';
+import Header from './Header';
 
 export default function BlueTrading() {
-  return <div>blue trading</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
