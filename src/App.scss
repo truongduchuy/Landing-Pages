@@ -1,0 +1,27 @@
+.landing-pages {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 20px;
+  
+  &__item {
+    width: 33.33%;
+
+    &__wrapper {
+      padding: 15px;
+
+      img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 50%;
+    }
+
+    @media screen and (max-width: 480px) {
+      width: 100%;
+    }
+  }
+}
