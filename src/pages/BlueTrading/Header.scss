@@ -1,9 +1,10 @@
 .header {
   background-color: #0864B1;
   background-image: url('./images/background.png');
+  background-repeat: no-repeat;
   background-attachment: fixed;
 
-  padding: 71px 125px 60px 125px;
+  padding: 7rem 12.5rem 6rem 12.5rem;
 
   &__nav {
     display: flex;
@@ -19,10 +20,11 @@
         a {
           color: white;
           text-decoration: none;
+          font-size: 3rem;
         }
 
         &:not(:last-child) {
-          margin-right: 120px;
+          margin-right: 12rem;
         }
       }
     }
@@ -32,27 +34,28 @@
     color: white;
     display: flex;
     align-items: center;
-    margin-top: 60px;
+    margin-top: 6rem;
 
     > div {
-      flex: 1;
 
       &:first-child {
-        
+        flex: .6;
+
         h1 {
-          font-size: 65px;
+          font-size: 8rem;
           font-weight: bold;
-          margin-bottom: 30px;
+          margin-bottom: 3rem;
         }
 
         p {
-          padding-right: 90px;
-          font-size: 20px;
+          padding-right: 9rem;
+          font-size: 3rem;
         }
       }
 
       &:nth-child(2) {
-        padding-right: 30px;
+        flex: .4;
+        padding-right: 3rem;
 
         img {
           width: 100%;
