@@ -1,30 +1,64 @@
 .header {
-  background-color: #0864B1;
+  background-color: #0864b1;
   background-image: url('./images/background.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  padding: 7rem 12.5rem 6rem 12.5rem;
+  padding: 5.5rem;
 
   &__nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
 
+    > div:first-child {
+      font-size: 4.5rem;
+      font-weight: bold;
+    }
+
     ul {
+      z-index: 9;
       display: flex;
 
       li {
         list-style: none;
 
         a {
-          color: white;
-          text-decoration: none;
           font-size: 3rem;
         }
 
         &:not(:last-child) {
           margin-right: 12rem;
+        }
+      }
+    }
+  }
+
+  &__burger {
+    z-index: 10;
+    cursor: pointer;
+    display: none;
+
+    > div {
+      background-color: white;
+      margin: 8px;
+      width: 30px;
+      height: 2px;
+      transition: transform 0.3s;
+    }
+
+    &.toggled {
+      > div {
+        &:first-child {
+          transform: rotate(45deg);
+        }
+
+        &:nth-child(2) {
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg) translate(14px, -14px);
         }
       }
     }
@@ -37,9 +71,8 @@
     margin-top: 6rem;
 
     > div {
-
       &:first-child {
-        flex: .6;
+        flex: 0.6;
 
         h1 {
           font-size: 8rem;
@@ -54,12 +87,110 @@
       }
 
       &:nth-child(2) {
-        flex: .4;
+        flex: 0.4;
         padding-right: 3rem;
 
         img {
           width: 100%;
           max-width: 100%;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    &__nav {
+      > div:first-child {
+        font-size: 3.5rem;
+      }
+
+      ul {
+        opacity: 0;
+        transform: translateX(400px);
+        transition: transform 0.5s, opacity 0.5s;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        max-width: 400px;
+        width: 100%;
+        background: #2a2a2a;
+        padding: 14rem 9rem 7rem;
+
+        li:not(:last-child) {
+          margin: 0 0 50px 0;
+        }
+
+        &.toggled {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
+
+    &__content {
+
+      > div {
+        &:first-child {
+          margin-bottom: 5rem;
+
+          h1 {
+            font-size: 6rem;
+          }
+
+          p {
+            font-size: 2.5rem;
+            padding-right: 3rem;
+          }
+        }
+
+        &:nth-child(2) {
+          padding-right: 0;
+        }
+      }
+    }
+
+    &__burger {
+      display: block;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__content {
+      flex-direction: column;
+
+      > div {
+        &:first-child {
+          h1 {
+            font-size: 5rem;
+          }
+
+          p {
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 3.5rem;
+
+    &__content {
+      margin-top: 4rem;
+
+      > div {
+        &:first-child {
+          h1 {
+            font-size: 4rem;
+          }
+
+          p {
+            font-size: 1.6rem;
+            padding-right: 0;
+          }
         }
       }
     }

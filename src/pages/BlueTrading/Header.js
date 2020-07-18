@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BlueTrading from './images/BlueTrading.png';
 import Meeting from './images/meeting.png';
 import './Header.scss';
@@ -6,21 +6,28 @@ import './Header.scss';
 const navItems = ['About us', 'Features', 'Contact'];
 
 export default function Header() {
+  const [toggledMenu, settoggledMenu] = useState(false);
   return (
     <header className="header">
       <nav className="header__nav">
         <div>
-          <a href="##">
-            <img src={BlueTrading} alt="logo" />
-          </a>
+          <a href="##">BlueTrading</a>
         </div>
-        <ul>
+        <ul className={toggledMenu ? 'toggled' : ''}>
           {navItems.map((item, index) => (
             <li key={index}>
               <a href="##">{item}</a>
             </li>
           ))}
         </ul>
+        <div
+          className={`header__burger ${toggledMenu ? 'toggled' : null}`}
+          onClick={() => settoggledMenu(!toggledMenu)}
+        >
+          <div />
+          <div />
+          <div />
+        </div>
       </nav>
       <div className="header__content">
         <div>
