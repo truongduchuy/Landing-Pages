@@ -4,8 +4,6 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 
-  padding: 5.5rem;
-
   &__nav {
     display: flex;
     align-items: center;
@@ -69,6 +67,7 @@
     display: flex;
     align-items: center;
     margin-top: 6rem;
+    padding: 0 8rem 0 4rem;
 
     > div {
       &:first-child {
@@ -125,12 +124,13 @@
 
         &.toggled {
           opacity: 1;
-          transform: translateY(0);
+          transform: translateX(0);
         }
       }
     }
 
     &__content {
+      padding: 0 0 0 3rem;
 
       > div {
         &:first-child {
@@ -176,8 +176,6 @@
   }
 
   @media screen and (max-width: 480px) {
-    padding: 3.5rem;
-
     &__content {
       margin-top: 4rem;
 
@@ -194,5 +192,16 @@
         }
       }
     }
+  }
+
+  @media screen and (max-width: 768px) {
+      h3 {
+        font-size: 3.5rem;
+        margin-bottom: 5rem;
+
+        &::after {
+          width: 12rem;
+        }
+      }
   }
 }

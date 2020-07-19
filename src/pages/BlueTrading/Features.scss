@@ -1,0 +1,42 @@
+.features {
+  background-color: #F5F5F5;
+
+  &__heading {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .item {
+      width: 33.33%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__image {
+        background-color: #0864B1;
+        display: inline-block;
+        padding: 4rem;
+        margin-bottom: 4rem;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 50%;
+        margin-bottom: 2rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+      }
+    }
+  }
+}

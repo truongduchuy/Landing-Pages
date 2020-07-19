@@ -1,32 +1,12 @@
 .about {
-  padding: 8rem 4rem 3rem;
-
   &__content {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10rem;
 
-    h3 {
-      color: #0864b1;
-      margin-bottom: 8rem;
-      font-size: 5rem;
-      position: relative;
-
-      &::after {
-        content: '';
-        width: 18rem;
-        height: 0.5rem;
-        background-color: #676767;
-        position: absolute;
-        bottom: -0.5rem;
-        left: 1rem;
-      }
-    }
-
     p {
       text-align: center;
-      font-size: 3rem;
       padding: 0 15rem;
     }
   }
@@ -61,10 +41,6 @@
         font-weight: bold;
         color: #0864b1;
       }
-
-      p:nth-child(2) {
-        font-size: 3rem;
-      }
     }
   }
 
@@ -72,17 +48,7 @@
     &__content {
       margin-bottom: 8rem;
 
-      h3 {
-        font-size: 4.5rem;
-        margin-bottom: 6rem;
-
-        &::after {
-          width: 16rem;
-        }
-      }
-
       p {
-        font-size: 2.5rem;
         padding: 0 10rem;
       }
     }
@@ -93,10 +59,6 @@
           font-size: 6rem;
         }
 
-        p:nth-child(2) {
-          font-size: 2.5rem;
-        }
-
         &:not(:last-child)::after {
           height: 9rem;
         }
@@ -104,22 +66,10 @@
     }
   }
   @media screen and (max-width: 768px) {
-    padding: 7rem 4rem 3.5rem;
-
     &__content {
       margin-bottom: 7rem;
 
-      h3 {
-        font-size: 3.5rem;
-        margin-bottom: 5rem;
-
-        &::after {
-          width: 12rem;
-        }
-      }
-
       p {
-        font-size: 1.8rem;
         padding: 0 3rem;
       }
     }
@@ -130,31 +80,18 @@
           font-size: 5rem;
         }
 
-        p:nth-child(2) {
-          font-size: 1.8rem;
-        }
-
         &:not(:last-child)::after {
           height: 7rem;
         }
       }
     }
   }
+
   @media screen and (max-width: 480px) {
     &__content {
-      margin-bottom: 7rem;
-
-      h3 {
-        font-size: 2.8rem;
-        margin-bottom: 5rem;
-
-        &::after {
-          width: 9rem;
-        }
-      }
+      margin-bottom: 4rem;
 
       p {
-        font-size: 1.6rem;
         padding: 0;
       }
     }
@@ -163,10 +100,6 @@
       > div {
         p:first-child {
           font-size: 3.5rem;
-        }
-
-        p:nth-child(2) {
-          font-size: 1.6rem;
         }
       }
     }

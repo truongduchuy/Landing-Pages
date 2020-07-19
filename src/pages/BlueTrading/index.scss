@@ -1,0 +1,71 @@
+.container {
+  padding: 5.5rem;
+
+  @media screen and (max-width: 768px) {
+    padding: 4rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 3rem;
+  }
+}
+
+.heading {
+  color: #0864b1;
+  margin-bottom: 8rem;
+  font-size: 5rem;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 18rem;
+    height: 0.5rem;
+    background-color: #676767;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 1rem;
+  }
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4.5rem;
+    margin-bottom: 6rem;
+
+    &::after {
+      width: 16rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 3.5rem;
+    margin-bottom: 5rem;
+
+    &::after {
+      width: 12rem;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 2.8rem;
+    margin-bottom: 5rem;
+
+    &::after {
+      width: 9rem;
+    }
+  }
+}
+
+.normal-text {
+  font-size: 3rem;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 1.8rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 1.6rem;
+  }
+}

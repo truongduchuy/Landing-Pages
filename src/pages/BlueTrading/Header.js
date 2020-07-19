@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import BlueTrading from './images/BlueTrading.png';
 import Meeting from './images/meeting.png';
 import './Header.scss';
 
@@ -8,7 +7,7 @@ const navItems = ['About us', 'Features', 'Contact'];
 export default function Header() {
   const [toggledMenu, settoggledMenu] = useState(false);
   return (
-    <header className="header">
+    <header className="header container">
       <nav className="header__nav">
         <div>
           <a href="##">BlueTrading</a>
