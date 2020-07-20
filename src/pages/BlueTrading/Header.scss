@@ -46,6 +46,7 @@
     }
 
     &.toggled {
+      
       > div {
         &:first-child {
           transform: rotate(45deg);
